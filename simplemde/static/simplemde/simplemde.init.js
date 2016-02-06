@@ -14,7 +14,8 @@ if (!!simplemdeJQuery) {
     simplemdeJQuery.each(simplemdeJQuery('.simplemde-box'), function(i, elem) {
       var options = JSON.parse(simplemdeJQuery(elem).attr('data-simplemde-options'));
       options['element'] = elem;
-      new SimpleMDE(options);
+      var simplemde = new SimpleMDE(options);
+      elem.SimpleMDE = simplemde;
     });
   });
 }
