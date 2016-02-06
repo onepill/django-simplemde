@@ -8,6 +8,7 @@ pip install django-simplemde
 ```
 
 * add 'simplemde' to INSTALLED_APPS.
+
 ```python
 INSTALLED_APPS = (
     # ...
@@ -42,3 +43,11 @@ SIMPLEMDE_OPTIONS = {
 Right now this plugin supports [SimpleMDE Configurations](https://github.com/NextStepWebs/simplemde-markdown-editor#configuration), but only the static ones(don't support js configurations like ```previewRender```)
 
 ***for autosave option, you dont need to set it, this plugin will generate uniqueId with python's uuid.uuid4 automatically***
+
+# Get SimpleMDE instance from DOM
+
+After SimpleMDE initialized, you could get SimpleMDE instance from dom element like this:
+
+```javascript
+$('.simplemde-box')[0].SimpleMDE
+```
