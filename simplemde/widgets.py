@@ -19,7 +19,7 @@ class SimpleMDEEditor(widgets.Textarea):
     @property
     def options(self):
         options = GLOBAL_OPTIONS.copy()
-        if options.has_key('autosave') and options['autosave'].get('enabled', False):
+        if 'autosave' in options and options['autosave'].get('enabled', False):
             options['autosave']['uniqueId'] = unicode(uuid.uuid4())
         options.update(self.custom_options)
         return options
