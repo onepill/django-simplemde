@@ -1,3 +1,4 @@
+from __future__ import unicode_literals
 import uuid
 from django import forms
 from django.forms import widgets
@@ -20,7 +21,7 @@ class SimpleMDEEditor(widgets.Textarea):
     def options(self):
         options = GLOBAL_OPTIONS.copy()
         if 'autosave' in options and options['autosave'].get('enabled', False):
-            options['autosave']['uniqueId'] = unicode(uuid.uuid4())
+            options['autosave']['uniqueId'] = str(uuid.uuid4())
         options.update(self.custom_options)
         return options
 
