@@ -1,5 +1,6 @@
-from django.conf.urls import patterns, include, url
+from django.conf.urls import url
+from .views import index
 
-urlpatterns = patterns('',
-    url(r'^$', 'markdown.views.index'),
-)
+urlpatterns = [
+    url(r'^$', index),
+]

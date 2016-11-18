@@ -104,7 +104,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 SIMPLEMDE_OPTIONS = {
-    'placeholder': 'haha',
+    'placeholder': 'Do you fancy Markdown?',
+    'spellChecker': False,
     'status': False,
     'autosave': {
         'enabled': True
