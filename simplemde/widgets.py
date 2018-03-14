@@ -38,6 +38,9 @@ class SimpleMDEEditor(widgets.Textarea):
         attrs['data-simplemde-options'] = json_dumps(self.options)
 
         html = super(SimpleMDEEditor, self).render(name, value, attrs)
+        
+        # insert this style tag to fix the label from breaking into the toolbar
+        html += "<style>.field-%s label { float: none; }</style>" % name
 
         return mark_safe(html)
 
