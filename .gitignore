@@ -60,3 +60,4 @@ target/
 
 # sqlite file
 *.sqlite3
+.DS_Store
