@@ -1,5 +1,5 @@
 # A markdown editor(with preview) for Django
-Use markdown editor https://github.com/NextStepWebs/simplemde-markdown-editor in django project, this project is inspired by https://github.com/douglasmiranda/django-wysiwyg-redactor/ 
+Use markdown editor https://github.com/sparksuite/simplemde-markdown-editor in django project, this project is inspired by https://github.com/douglasmiranda/django-wysiwyg-redactor/ 
 
 # Getting started
 * install django-simplemde
@@ -40,7 +40,7 @@ SIMPLEMDE_OPTIONS = {
 }
 ```
 
-Right now this plugin supports [SimpleMDE Configurations](https://github.com/NextStepWebs/simplemde-markdown-editor#configuration), but only the static ones(don't support js configurations like ```previewRender```)
+Right now this plugin supports [SimpleMDE Configurations](https://github.com/sparksuite/simplemde-markdown-editor#configuration), but only the static ones(don't support js configurations like ```previewRender```)
 
 ***for autosave option, you dont need to set it, this plugin will generate uniqueId with python's uuid.uuid4 automatically***
 
