@@ -7,9 +7,10 @@ f.close()
 
 setup(
     name='django-simplemde',
-    version='0.1.3',
+    version='0.1.4',
     description='django-simplemde is a WYSIWYG markdown editor for Django',
     long_description=readme,
+    long_description_content_type="text/markdown",
     author="Siyuan Zhang",
     author_email='onepill@gmail.com',
     url='https://github.com/onepill/django-simplemde',
